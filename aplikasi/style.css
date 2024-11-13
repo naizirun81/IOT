@@ -1,0 +1,235 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+.dashboard-header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.dashboard-header .date {
+    font-size: 18px;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Data Summary Cards */
+.data-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.data-card:hover {
+    transform: translateY(-5px);
+}
+
+.data-card h3 {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.data-card p {
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Data Section Cards */
+.data-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.data-section h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.data-section .data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.data-section .data-item:last-child {
+    border-bottom: none;
+}
+
+.data-item h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+.data-item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .dashboard-content {
+        grid-template-columns: 1fr;/* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Body Styling */
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+        /* Header Styling */
+        .dashboard-header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .dashboard-header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        .dashboard-header .date {
+            font-size: 18px;
+        }
+        
+        /* Dashboard Content */
+        .dashboard-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
+            justify-items: center; /* Centering content */
+        }
+        
+        /* Data Summary Cards */
+        .data-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .data-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .data-card h3 {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        
+        .data-card p {
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        /* Data Section Cards */
+        .data-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        /* Center Content in Data Section */
+        .data-section h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center; /* Center the section title */
+        }
+        
+        /* Adjust Data Items to be aligned properly */
+        .data-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .data-item:last-child {
+            border-bottom: none;
+        }
+        
+        .data-item h4 {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        .data-item p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .dashboard-content {
+                grid-template-columns: 1fr;
+            }
+        
+            .data-card, .data-section {
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .data-card, .data-section {
+        width: 100%;
+    }
+}

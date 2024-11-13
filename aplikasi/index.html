@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature and Humidity Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Temperature and Humidity Dashboard</h1>
+        <p id="currentDate" class="date"></p>
+    </header>
+
+    <div class="dashboard-content">
+        <!-- Data Summary Cards -->
+        <div class="data-card">
+            <h3>Temperature Max</h3>
+            <p id="temp-max">-- °C</p>
+        </div>
+        <div class="data-card">
+            <h3>Temperature Min</h3>
+            <p id="temp-min">-- °C</p>
+        </div>
+        <div class="data-card">
+            <h3>Avg. Temperature</h3>
+            <p id="temp-avg">-- °C</p>
+        </div>
+
+        
+
+        <div id="suhuHumidityMax" class="data-section">
+            <h2>Max Temperature & Humidity Details</h2>
+            <!-- Temp, Humid, Brightness data here -->
+            <div class="data-item">
+                <h4>Temperature</h4>
+                <p id="max-temp">-- °C</p>
+            </div><!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Temperature and Humidity Dashboard</title>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script src="script.js" defer></script>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <header class="dashboard-header">
+                    <h1>Temperature and Humidity Dashboard</h1>
+                    <p id="currentDate" class="date"></p>
+                </header>
+            
+                <div class="dashboard-content">
+                    <!-- Data Summary Cards -->
+                    <div class="data-card">
+                        <h3>Temperature Max</h3>
+                        <p id="temp-max">-- °C</p>
+                    </div>
+                    <div class="data-card">
+                        <h3>Temperature Min</h3>
+                        <p id="temp-min">-- °C</p>
+                    </div>
+                    <div class="data-card">
+                        <h3>Avg. Temperature</h3>
+                        <p id="temp-avg">-- °C</p>
+                    </div>
+            
+                    <!-- Data Sections Below -->
+                    <div id="suhuHumidityMax" class="data-section">
+                        <h2>Max Temperature & Humidity Details</h2>
+                        <div class="data-item">
+                            <h4>Temperature</h4>
+                            <p id="max-temp">-- °C</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Humidity</h4>
+                            <p id="max-humid">-- %</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Brightness</h4>
+                            <p id="max-brightness">-- %</p>
+                        </div>
+                        <!-- Moved IDX and Month-Year to the bottom -->
+                        <div class="data-item">
+                            <h4>IDX</h4>
+                            <p id="idx">--</p>
+                        </div>
+                        <div class="data-item">
+                            <h4>Month-Year</h4>
+                            <p id="month-year-data">--</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </body>
+            </html>
+            
+            <div class="data-item">
+                <h4>Humidity</h4>
+                <p id="max-humid">-- %</p>
+            </div>
+            <div class="data-item">
+                <h4>Brightness</h4>
+                <p id="max-brightness">-- %</p>
+            </div>
+        </div>
+
+        <div id="monthYearData" class="data-section">
+            <h2>Monthly Data</h2>
+            <!-- Month-Year data here -->
+            <div class="data-item">
+                <h4>Month-Year</h4>
+                <p id="month-year-data">--</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
